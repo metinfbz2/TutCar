@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PacktPub</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{6243b0f3-4dba-4c73-8ffe-152a961b97a7}</ProjectGuid>
+    <Name>TutorialCar</Name>
+    <RootNamespace>TutorialCar</RootNamespace>
+    <StartupObject>readTextFile</StartupObject>
+    <StartupType>Class</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="EDT Integer64s\" />
+    <Folder Include="EDT Integers\" />
+    <Folder Include="EDT Strings\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\readTextFile">
+      <SubType>Content</SubType>
+      <Name>readTextFile</Name>
+      <Link>Classes\readTextFile</Link>
+    </Content>
+    <Content Include="AxEdt\CarId">
+      <SubType>Content</SubType>
+      <Name>CarId</Name>
+      <Link>EDT Strings\CarId</Link>
+    </Content>
+    <Content Include="AxEdt\CompanyColor4">
+      <SubType>Content</SubType>
+      <Name>CompanyColor4</Name>
+      <Link>EDT Integers\CompanyColor4</Link>
+    </Content>
+    <Content Include="AxEdt\custAccountNumber">
+      <SubType>Content</SubType>
+      <Name>CustAccountNumber</Name>
+      <Link>EDT Strings\custAccountNumber</Link>
+    </Content>
+    <Content Include="AxEdt\DocumentPath">
+      <SubType>Content</SubType>
+      <Name>DocumentPath</Name>
+      <Link>EDT Strings\DocumentPath</Link>
+    </Content>
+    <Content Include="AxForm\FMVehicleCopy">
+      <SubType>Content</SubType>
+      <Name>FMVehicleCopy</Name>
+      <Link>Forms\FMVehicleCopy</Link>
+    </Content>
+    <Content Include="AxForm\TutCarTwo">
+      <SubType>Content</SubType>
+      <Name>TutCarTwo</Name>
+      <Link>Forms\TutCarTwo</Link>
+    </Content>
+    <Content Include="AxForm\Vehicle">
+      <SubType>Content</SubType>
+      <Name>Vehicle</Name>
+      <Link>Forms\Vehicle</Link>
+    </Content>
+    <Content Include="AxTable\Car">
+      <SubType>Content</SubType>
+      <Name>Car</Name>
+      <Link>Tables\Car</Link>
+    </Content>
+    <Content Include="AxTable\FMVehicleCopy">
+      <SubType>Content</SubType>
+      <Name>FMVehicleCopy</Name>
+      <Link>Tables\FMVehicleCopy</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

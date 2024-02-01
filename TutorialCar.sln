@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "TutorialCar (USR) [PacktPub]", "TutorialCar\TutorialCar.rnrproj", "{6243B0F3-4DBA-4C73-8FFE-152A961B97A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6243B0F3-4DBA-4C73-8FFE-152A961B97A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6243B0F3-4DBA-4C73-8FFE-152A961B97A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32A44CC5-EC86-46B3-8296-B8808282F798}
+	EndGlobalSection
+EndGlobal
