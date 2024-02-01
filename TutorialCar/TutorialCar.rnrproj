@@ -58,7 +58,7 @@
     </Content>
     <Content Include="AxEdt\custAccountNumber">
       <SubType>Content</SubType>
-      <Name>CustAccountNumber</Name>
+      <Name>custAccountNumber</Name>
       <Link>EDT Strings\custAccountNumber</Link>
     </Content>
     <Content Include="AxEdt\DocumentPath">
